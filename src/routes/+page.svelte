@@ -264,7 +264,7 @@
 <MobileChat />
 
 
-<div class="flex flex-col items-center justify-center min-h-screen bg-gray-900 text-white">
+<div class="flex flex-col items-center justify-center min-h-full bg-gray-900 text-white">
 	<h1 class="text-5xl font-bold mb-2">BITSmegle</h1>
 
 	{#if $user}

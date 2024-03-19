@@ -50,6 +50,11 @@
 						'ngrok-skip-browser-warning': '1'
 					}
 				})
+				// io('wss://bitsmegle-production.up.railway.app', {
+				// 	// extraHeaders: {
+				// 	// 	'ngrok-skip-browser-warning': '1'
+				// 	// }
+				// })
 			);
 
 			$socket?.on('eventFromServer', (message) => {

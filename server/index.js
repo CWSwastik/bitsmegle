@@ -177,10 +177,10 @@ app.post('/api/users', async (req, res) => {
 		httpOnly: false,
 		maxAge: 60 * 60 * 24 * 7, // 1 week
 		path: '/',
-		sameSite: 'strict',
+		sameSite: 'none',
 		secure: true
 	});
-	return res.status(200).header('Set-Cookie', serializedCookie).json(data);
+	return res.header('Set-Cookie', serializedCookie).status(200).json(data);
 });
 
 async function refreshToken(refresh_token) {
